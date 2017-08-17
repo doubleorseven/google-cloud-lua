@@ -35,11 +35,6 @@ function _M:Request(path,data,headers,method)
     sink = ltn12.sink.table(out)
     }
     local _, code, res_headers = http.request(r)
-    print(self._base_url)
-    print(json.encode(headers))
-    print(json.encode(code))
-    print(json.encode(res_headers))
-    print(json.encode(out))
     return out
   end
 
