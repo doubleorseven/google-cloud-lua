@@ -14,7 +14,7 @@ A library for connecting to [Google Cloud Pub/Sub](https://cloud.google.com/pubs
                 local json = require "cjson"
                 
 
-                local oauth = OAuth("/path/to/datastoreserviceaccount.json",Datastore.getScopes())
+                local oauth = OAuth("/path/to/pubsubserviceaccount.json",Datastore.getScopes())
                 local pubsub = PubSub(oauth)
                 if pubsub then
                 end
